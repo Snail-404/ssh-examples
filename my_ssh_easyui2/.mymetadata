@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="my_ssh_easyui2"
+  id="myeclipse.1502330872821"
+  context-root="/my_ssh_easyui2"
+  j2ee-spec="5.0"
+  archive="my_ssh_easyui2.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!-- <constant name="struts.devMode" value="true"></constant> -->
+	<package name="default" extends="struts-default,json-default" namespace="/">
+		<action name="user_*" class="userAction" method="{1}">
+			 <result name="success" type="json">
+			 	<!-- <param name="includeProperties">json1</param> -->
+			 	<!-- <param name="root">array</param> -->
+			 	<param name="root">list</param>
+			 	<param name="callbackParameter">callback</param>
+			 	<param name="noCache">true</param>  
+			 	
+			 </result>
+		</action>
+	
+	
+		<!-- <action name="user_*" class="userAction" method="{1}">
+			 <result name="fail">/{1}_fail.jsp</result>
+			 <result name="success">/{1}_success.jsp</result>
+		</action> -->
+		
+		
+	</package>
+</struts>
+	
